@@ -86,32 +86,6 @@
     background: #40826d;
 }
 
-
-/*masthead*/
-
-.masthead {
-    background-color: var(--white);
-    height: 60vh;
-    background-image: url(landing4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0%;
-}
-
-@media screen and (max-width: 768px) {
-    .masthead {
-        height: 50vh;
-    }
-}
-
-
-/*title*/
-
-.title {
-    color: black;
-}
-
 * {
     font-family: 'Fira Sans', sans-serif;
 }
@@ -144,12 +118,13 @@ section {
 }
 
 #bold {
-    font-weight: 900;
+    font-weight: 600;
+    font-size: 3rem;
 }
 
 #normal {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 2rem;
 }
 
 #center h2 {
