@@ -8,6 +8,12 @@
     --dark-grey: #171719;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -160,6 +166,80 @@ a.nav-link {
     #Landing {
         height: 50vh;
     }
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 13px;
+    padding-bottom: 11px;
+    display: inline-block;
+    position: relative;
+}
+
+.section-title:after,
+.section-title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+}
+
+.section-title:after {
+    height: 2px;
+    background-color: rgba(24, 24, 24, 0.46);
+    left: 10%;
+    right: 10%;
+}
+
+.section-title:before {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    background-color: #437e60;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -9px;
+    z-index: 9;
+    border-radius: 50%;
+}
+
+.info p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.accordion {
+    max-width: 70vw !important;
+    margin: 50px auto;
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18) !important;
+}
+
+.accordion-button {
+    background-color: #437e60 !important;
+    color: var(--white) !important;
+    position: relative;
+    box-shadow: none !important;
+}
+
+.accordion-button:active,
+.accordion-button:focus {
+    border: none !important;
+}
+
+.accordion-button:hover {
+    background: #25aca3 !important;
+}
+
+.accordion-button::after {
+    content: "";
+    background: #fff;
+    transform: scale(1.2);
+    border-radius: 3px;
+    transition: .5s !important;
 }
 
 footer {
