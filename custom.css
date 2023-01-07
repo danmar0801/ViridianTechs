@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap');
 :root {
     --teal: #437e60;
+    --dark-teal: #3bab71;
     --white: #fcfcfc;
     --grey: #E5E5E5;
     --black: #000;
@@ -12,6 +13,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .navbar-toggler,
@@ -242,6 +248,16 @@ a.nav-link {
     transition: .5s !important;
 }
 
+.row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
 footer {
     padding: 1vw;
     background-color: var(--dark-grey);
@@ -282,4 +298,70 @@ footer a {
     .footer-div div {
         margin-bottom: 20px;
     }
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards li {
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #3bab71;
+    color: #fff;
+    flex: 1 1 200px;
+}
+
+.cards h2 {
+    background-color: #437e60;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.cards p {
+    padding: 10px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.flex li {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+button.buttons1 {
+    padding: 7px 21px;
+    border-radius: 23px;
+    border: none;
+    color: var(--white);
+    background-color: var(--teal);
+    font-size: 1.3rem;
+}
+
+.buttons1:hover {
+    background-color: #a8d3c6;
+}
+
+.buttons1 a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.divi {
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: center;
 }
